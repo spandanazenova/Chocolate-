@@ -898,3 +898,547 @@ a {
     }
 
 }
+/* ==========================================
+   PART 2 : FEATURE STRIP
+========================================== */
+
+.feature-strip {
+
+    width: 100%;
+
+    min-height: 96px;
+
+    background: #f4f1e8;
+
+    border-top: 1px solid #e5e1d6;
+    border-bottom: 1px solid #e5e1d6;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    align-items: center;
+
+    padding: 17px 6%;
+}
+
+
+.feature-item {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    min-height: 60px;
+
+    border-right: 1px solid #ded9cb;
+}
+
+
+.feature-item:last-child {
+
+    border-right: none;
+}
+
+
+.feature-icon {
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #8d896f;
+
+    font-size: 31px;
+
+    flex-shrink: 0;
+}
+
+
+.shield-icon {
+
+    font-size: 30px;
+}
+
+
+.feature-text h3 {
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.25px;
+
+    color: #292c26;
+
+    margin-bottom: 6px;
+}
+
+
+.feature-text p {
+
+    font-size: 9px;
+
+    line-height: 1.5;
+
+    color: #5b5d54;
+}
+
+
+/* ==========================================
+   BESTSELLERS SECTION
+========================================== */
+
+.bestsellers-section {
+
+    width: 100%;
+
+    background: #fbfaf6;
+
+    padding: 25px 5% 18px;
+
+    position: relative;
+}
+
+
+/* ==========================================
+   BESTSELLER HEADING
+========================================== */
+
+.section-heading {
+
+    text-align: center;
+
+    margin-bottom: 15px;
+}
+
+
+.section-heading h2 {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 32px;
+
+    font-weight: 600;
+
+    color: #1d211c;
+
+    line-height: 1;
+}
+
+
+.section-heading p {
+
+    font-size: 10px;
+
+    color: #66665d;
+
+    margin-top: 3px;
+}
+
+
+/* Small gold decoration */
+
+.heading-decoration {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 6px;
+
+    height: 13px;
+
+    margin-top: 4px;
+}
+
+
+.heading-decoration span {
+
+    width: 25px;
+
+    height: 1px;
+
+    background: #c5a968;
+}
+
+
+.heading-decoration i {
+
+    font-size: 7px;
+
+    color: #c5a968;
+
+    font-style: normal;
+}
+
+
+/* ==========================================
+   PRODUCTS WRAPPER
+========================================== */
+
+.products-wrapper {
+
+    width: 100%;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* ==========================================
+   PRODUCTS CONTAINER
+========================================== */
+
+.products-container {
+
+    width: 92%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr));
+
+    gap: 13px;
+}
+
+
+/* ==========================================
+   PRODUCT CARD
+========================================== */
+
+.product-card {
+
+    background: #fdfcf9;
+
+    border: 1px solid #e5e1d8;
+
+    border-radius: 7px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 2px 8px rgba(45, 40, 30, 0.07);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.product-card:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 7px 18px rgba(45, 40, 30, 0.12);
+}
+
+
+/* ==========================================
+   PRODUCT IMAGE
+========================================== */
+
+.product-image {
+
+    width: 100%;
+
+    height: 150px;
+
+    background: #e9e3d7;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.product-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.35s ease;
+}
+
+
+.product-card:hover .product-image img {
+
+    transform: scale(1.04);
+}
+
+
+/* ==========================================
+   PRODUCT INFORMATION
+========================================== */
+
+.product-info {
+
+    text-align: center;
+
+    padding: 10px 8px 11px;
+}
+
+
+.product-info h3 {
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    color: #292b26;
+
+    line-height: 1.2;
+}
+
+
+.product-info p {
+
+    font-size: 8px;
+
+    color: #77766d;
+
+    margin-top: 3px;
+}
+
+
+.product-price {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    color: #292a25;
+
+    margin-top: 5px;
+}
+
+
+/* ==========================================
+   ADD TO CART BUTTON
+========================================== */
+
+.cart-button {
+
+    border: none;
+
+    outline: none;
+
+    background: #28533f;
+
+    color: white;
+
+    border-radius: 12px;
+
+    padding: 6px 13px;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.15px;
+
+    cursor: pointer;
+
+    margin-top: 5px;
+}
+
+
+.cart-button span {
+
+    font-size: 8px;
+
+    margin-left: 3px;
+}
+
+
+/* ==========================================
+   SLIDER ARROWS
+========================================== */
+
+.slider-arrow {
+
+    width: 27px;
+
+    height: 27px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    background: #1e553d;
+
+    color: white;
+
+    font-family: serif;
+
+    font-size: 23px;
+
+    line-height: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    z-index: 4;
+
+    cursor: pointer;
+}
+
+
+.left-arrow {
+
+    left: 0;
+}
+
+
+.right-arrow {
+
+    right: 0;
+}
+
+
+/* ==========================================
+   PART 2 RESPONSIVE
+========================================== */
+
+@media (max-width: 1100px) {
+
+    .feature-strip {
+
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .feature-item {
+
+        gap: 8px;
+    }
+
+    .products-container {
+
+        gap: 8px;
+    }
+
+    .product-image {
+
+        height: 125px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .feature-strip {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        padding: 10px 15px;
+    }
+
+
+    .feature-item {
+
+        padding: 10px 5px;
+
+        border-bottom: 1px solid #ded9cb;
+    }
+
+
+    .feature-item:nth-child(2) {
+
+        border-right: none;
+    }
+
+
+    .feature-item:nth-child(3),
+    .feature-item:nth-child(4) {
+
+        border-bottom: none;
+    }
+
+
+    .bestsellers-section {
+
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 29px;
+    }
+
+
+    .products-container {
+
+        width: 88%;
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+
+    .product-card:nth-child(n+3) {
+
+        display: none;
+    }
+
+
+    .product-image {
+
+        height: 145px;
+    }
+
+
+    .slider-arrow {
+
+        width: 25px;
+        height: 25px;
+
+        font-size: 20px;
+    }
+
+}
