@@ -1941,3 +1941,674 @@ a {
         top: auto;
     }
 }
+/* ==========================================
+   PART 4 : CUSTOM CHOCOLATES
+========================================== */
+
+.custom-chocolate-section {
+
+    width: 100%;
+
+    min-height: 245px;
+
+    background: #17382a;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: grid;
+
+    grid-template-columns: 50% 50%;
+
+    align-items: center;
+}
+
+
+/* ==========================================
+   CUSTOM CONTENT
+========================================== */
+
+.custom-content {
+
+    padding-left: 13%;
+
+    position: relative;
+
+    z-index: 3;
+}
+
+
+.custom-small-title {
+
+    color: #c6ae72;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.6px;
+
+    margin-bottom: 7px;
+}
+
+
+.custom-content h2 {
+
+    font-family: "Cormorant Garamond", serif;
+
+    color: #f5f1e6;
+
+    font-size: 42px;
+
+    line-height: 0.86;
+
+    font-weight: 500;
+}
+
+
+.custom-content h2 span {
+
+    color: #c8af72;
+
+    font-style: italic;
+}
+
+
+.custom-decoration {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    margin-top: 8px;
+}
+
+
+.custom-decoration span {
+
+    width: 24px;
+
+    height: 1px;
+
+    background: #c5aa68;
+}
+
+
+.custom-decoration i {
+
+    font-size: 6px;
+
+    color: #c5aa68;
+
+    font-style: normal;
+}
+
+
+.custom-description {
+
+    color: #d8ddd3;
+
+    font-size: 9px;
+
+    line-height: 1.55;
+
+    margin-top: 8px;
+}
+
+
+/* ==========================================
+   CUSTOM BUTTON
+========================================== */
+
+.custom-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 13px;
+
+    background: #c2a565;
+
+    color: #17251d;
+
+    padding: 9px 16px;
+
+    border-radius: 15px;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.4px;
+
+    margin-top: 12px;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.custom-button span {
+
+    font-size: 14px;
+
+    line-height: 7px;
+}
+
+
+.custom-button:hover {
+
+    background: #d4bd83;
+
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   CUSTOM IMAGE
+========================================== */
+
+.custom-image {
+
+    width: 100%;
+
+    height: 245px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.custom-image::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 310px;
+
+    height: 310px;
+
+    border-radius: 50%;
+
+    background: #294837;
+
+    right: 8%;
+
+    top: -35px;
+
+    opacity: 0.75;
+}
+
+
+.custom-image img {
+
+    width: 430px;
+
+    height: 270px;
+
+    object-fit: contain;
+
+    position: relative;
+
+    z-index: 2;
+
+    display: block;
+}
+
+
+/* ==========================================
+   DECORATIVE LEAF
+========================================== */
+
+.custom-decoration-leaf {
+
+    position: absolute;
+
+    right: -25px;
+
+    bottom: -30px;
+
+    font-size: 100px;
+
+    color: #6c7d68;
+
+    opacity: 0.18;
+
+    transform: rotate(20deg);
+
+    z-index: 1;
+}
+
+
+/* ==========================================
+   PART 4 : REVIEWS
+========================================== */
+
+.reviews-section {
+
+    width: 100%;
+
+    background: #f8f5ed;
+
+    padding: 26px 7% 22px;
+
+    position: relative;
+}
+
+
+/* ==========================================
+   REVIEW HEADING
+========================================== */
+
+.reviews-heading {
+
+    text-align: center;
+
+    margin-bottom: 17px;
+}
+
+
+.reviews-heading > p {
+
+    font-size: 7px;
+
+    color: #69806c;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 3px;
+}
+
+
+.reviews-heading h2 {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 31px;
+
+    color: #20231e;
+
+    font-weight: 600;
+
+    line-height: 1;
+}
+
+
+.reviews-heading-decoration {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 5px;
+
+    margin-top: 5px;
+}
+
+
+.reviews-heading-decoration span {
+
+    width: 25px;
+
+    height: 1px;
+
+    background: #c4a564;
+}
+
+
+.reviews-heading-decoration i {
+
+    color: #c4a564;
+
+    font-size: 6px;
+
+    font-style: normal;
+}
+
+
+/* ==========================================
+   REVIEW CARDS
+========================================== */
+
+.reviews-container {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+    max-width: 920px;
+
+    margin: auto;
+}
+
+
+.review-card {
+
+    background: #fffdf8;
+
+    border: 1px solid #e5e0d4;
+
+    border-radius: 6px;
+
+    padding: 16px 18px 13px;
+
+    position: relative;
+
+    min-height: 130px;
+
+    box-shadow:
+        0 2px 8px rgba(40, 35, 25, 0.04);
+}
+
+
+/* Middle highlighted card */
+
+.featured-review {
+
+    border-top: 2px solid #c2a565;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 5px 15px rgba(40, 35, 25, 0.08);
+}
+
+
+/* ==========================================
+   QUOTE
+========================================== */
+
+.quote-mark {
+
+    position: absolute;
+
+    right: 15px;
+
+    top: 6px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 35px;
+
+    color: #d4c39d;
+
+    line-height: 1;
+}
+
+
+/* ==========================================
+   STARS
+========================================== */
+
+.stars {
+
+    color: #bd9c54;
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 8px;
+}
+
+
+/* ==========================================
+   REVIEW TEXT
+========================================== */
+
+.review-text {
+
+    color: #55584f;
+
+    font-size: 8px;
+
+    line-height: 1.65;
+
+    max-width: 250px;
+}
+
+
+/* ==========================================
+   REVIEW AUTHOR
+========================================== */
+
+.review-author {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 12px;
+}
+
+
+.author-avatar {
+
+    width: 27px;
+
+    height: 27px;
+
+    border-radius: 50%;
+
+    background: #dfe4d9;
+
+    color: #31533e;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+
+.review-author h3 {
+
+    font-size: 8px;
+
+    color: #252823;
+
+    font-weight: 700;
+}
+
+
+.review-author p {
+
+    font-size: 6px;
+
+    color: #85857b;
+
+    margin-top: 2px;
+}
+
+
+/* ==========================================
+   REVIEW DOTS
+========================================== */
+
+.review-dots {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 5px;
+
+    margin-top: 14px;
+}
+
+
+.review-dots span {
+
+    width: 5px;
+
+    height: 5px;
+
+    border-radius: 50%;
+
+    background: #c7c5b8;
+}
+
+
+.review-dots .active-dot {
+
+    width: 15px;
+
+    border-radius: 5px;
+
+    background: #31543f;
+}
+
+
+/* ==========================================
+   PART 4 : TABLET
+========================================== */
+
+@media (max-width: 1000px) {
+
+    .custom-content {
+
+        padding-left: 8%;
+    }
+
+
+    .custom-content h2 {
+
+        font-size: 37px;
+    }
+
+
+    .custom-image img {
+
+        width: 380px;
+    }
+
+
+    .reviews-section {
+
+        padding-left: 4%;
+
+        padding-right: 4%;
+    }
+}
+
+
+/* ==========================================
+   PART 4 : MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .custom-chocolate-section {
+
+        display: flex;
+
+        flex-direction: column;
+
+        min-height: auto;
+    }
+
+
+    .custom-content {
+
+        width: 100%;
+
+        padding: 35px 25px 25px;
+
+        text-align: center;
+    }
+
+
+    .custom-content h2 {
+
+        font-size: 40px;
+    }
+
+
+    .custom-decoration {
+
+        justify-content: center;
+    }
+
+
+    .custom-description {
+
+        font-size: 9px;
+    }
+
+
+    .custom-image {
+
+        height: 245px;
+    }
+
+
+    .custom-image img {
+
+        width: 340px;
+
+        height: 240px;
+    }
+
+
+    .reviews-section {
+
+        padding: 30px 18px 25px;
+    }
+
+
+    .reviews-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+
+        max-width: 420px;
+    }
+
+
+    .review-card {
+
+        min-height: 125px;
+    }
+
+
+    .featured-review {
+
+        transform: none;
+    }
+}
